@@ -8,7 +8,8 @@
 //first
 
 //second
-void    *ft_memalloc(size_t size);
+void	*ft_memalloc(size_t size);
+void	ft_memdel(void **ap);
 
 //bonus
 
