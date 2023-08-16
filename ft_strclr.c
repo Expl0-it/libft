@@ -17,8 +17,9 @@ void	ft_strclr(char *s)
 int main(void)
 {
 	char	str[3] = "42";
+	printf("%s\n", str);
 	ft_strclr(str);
-	printf("%s", str);
+	printf("%s\n", str);
 	return 0;
 }
 */
