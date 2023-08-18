@@ -6,6 +6,7 @@
 # include <unistd.h>
 
 //first
+int	ft_strlen(char *str);
 
 //second
 void	*ft_memalloc(size_t size);
@@ -15,6 +16,7 @@ void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmap(char const *s, char (*f)(char));
 
 //bonus
 
