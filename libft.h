@@ -21,4 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 //bonus
 
+//additional
+int	ft_strcmp(char *s1, char *s2);
+int	ft_strncmp(char *s1, char *s2, unsigned int n);
 #endif
