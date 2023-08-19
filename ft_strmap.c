@@ -9,9 +9,9 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	{
 		i = 0;
 		new = ft_strnew(ft_strlen(s));
-		while (new[i])
+		while (s[i])
 		{
-			new[i] = f(new[i]);
+			new[i] = f(s[i]);
 			i++;
 		}	
 		return (new);
@@ -19,7 +19,10 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	return (NULL);
 }
 
-/**/
+/*
+TODO check the testing dumbass
+//pointer to func doesnt work
+
 char	f(char c)
 {
 	if (c >= 32 && c <= 125)
@@ -38,3 +41,4 @@ int main(void)
 	printf("%s", a);
 	return 0;
 }
+*/

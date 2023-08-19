@@ -17,11 +17,12 @@ void ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 /*
 TODO
+
 #include <stdio.h>
 int main(void)
 {
 	char	*str = "42";
-	ft_striter(str, //function);
+	ft_striter(str, f);
 	return 0;
 }
 */
