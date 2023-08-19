@@ -6,7 +6,7 @@
 # include <unistd.h>
 
 //first
-int	ft_strlen(char *str);
+int	ft_strlen(char const *str);
 
 //second
 void	*ft_memalloc(size_t size);
