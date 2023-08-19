@@ -1,8 +1,8 @@
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
+	unsigned int	i;
 	char	*new;
 
 	if (f && s)
@@ -11,7 +11,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		new = ft_strnew(ft_strlen(s));
 		while (s[i])
 		{
-			new[i] = f(s[i]);
+			new[i] = f(i, s[i]);
 			i++;
 		}	
 		return (new);
@@ -21,11 +21,12 @@ char	*ft_strmap(char const *s, char (*f)(char))
 
 /*
 
-char	f(char c)
+char	f(unsigned int index, char c)
 {
 	if (c >= 32 && c <= 125)
 	{
 		c = c + 1;
+		index++;
 	}
 	
 	return (c);
@@ -35,7 +36,7 @@ char	f(char c)
 int main(void)
 {
 	char	*b = "abc";
-	char	*a = ft_strmap(b, f);
+	char	*a = ft_strmapi(b, f);
 	printf("%s", a);
 	return 0;
 }
