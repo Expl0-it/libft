@@ -7,7 +7,7 @@
 
 //first
 int	ft_strlen(char const *str);
-
+char	*strchr(const char *s, int c);
 //second
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
@@ -22,6 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 //strnequ->strncmp
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 //bonus
 
 //additional
