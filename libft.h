@@ -6,6 +6,7 @@
 # include <unistd.h>
 
 //first
+void	*memset(void *s, int c, size_t n);
 int	ft_strlen(char const *str);
 char	*strchr(const char *s, int c);
 //second
