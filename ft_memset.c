@@ -21,7 +21,7 @@ int main()
     printf("\nBefore memset(): %s\n", str);
   
     // Fill 10 characters starting from str[10] with '.'
-    memset(str + 10, '.', 10*sizeof(char));
+    ft_memset(str + 10, '.', 10*sizeof(char));
   
     printf("After memset():  %s", str);
     return 0;
