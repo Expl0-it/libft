@@ -19,7 +19,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	return (NULL);
 }
 
-/**/
+/*
 #include <stdio.h>
 int main(void)
 {
@@ -29,3 +29,4 @@ int main(void)
 	printf("%s, %s", p_b, b);
 	return 0;
 }
+*/
