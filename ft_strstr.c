@@ -23,7 +23,7 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	return (NULL);
 }
 
-/**/
+/*
 #include <string.h>
 #include <stdio.h>
 int main(void)
@@ -33,3 +33,4 @@ int main(void)
 	printf("%s, %s", a, b);
 	return 0;
 }
+*/
