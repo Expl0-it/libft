@@ -10,21 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 != '\0')
+	while (*s1 && (unsigned char)*s1 == (unsigned char)*s2)
 	{
-		if (*s1 != *s2)
-		{
-			break ;
-		}
-		else
-		{
-			s1++;
-			s2++;
-		}
+		s1++;
+		s2++;
 	}
-	return ((unsigned char) *s1 - (unsigned char) *s2);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
 /*
@@ -33,10 +28,10 @@ int	ft_strcmp(char *s1, char *s2)
 
 int main()
 {
-	char s1[20] = "abca";
-	char s2[20] = "abda";
-	int a = ft_strcmp(s1, s2, 2);
-	int b = strcmp(s1, s2, 2);
+	char s1[20] = "abcaqwe";
+	char s2[20] = "azcaqwe";
+	int a = ft_strcmp(s1, s2);
+	int b = strcmp(s1, s2);
 	printf("%d, %d", a, b);
 	return 0;
 }
