@@ -24,6 +24,7 @@ int	ft_strcmp(char *s1, char *s2);
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 int	ft_atoi(const char *nptr);
 int	ft_isalpha(int c);
+int	ft_isdigit(int c);
 //second
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
