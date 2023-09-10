@@ -7,7 +7,7 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/**/
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -15,3 +15,4 @@ int	main(void)
 	printf("%c", a);
 	return (0);
 }
+*/
