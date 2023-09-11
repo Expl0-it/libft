@@ -30,6 +30,7 @@ int	ft_isascii(int c);
 int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+void	*ft_calloc(size_t nmemb, size_t size);
 //second
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
