@@ -2,19 +2,13 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void    *memory = malloc(size);
+	void    *memory;
+	memory = malloc(size);
 	if (!memory)
 	{
 		return (NULL);
 	}
-	char	*set = memory;
-	while (size != 0)
-	{
-		*set = '\0';
-			size--;
-		if (size != 0)
-			set++;
-	}
+	ft_bzero(memory, size);
 	return (memory);
 }
 
