@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//checks if the given value is numerical
 int	ft_isdigit(int c)
 {
 	if ('0' <= (unsigned char)c && (unsigned char)c <= '9')

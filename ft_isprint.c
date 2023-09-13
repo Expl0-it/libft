@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//checks if the given value is printable
 int	ft_isprint(int c)
 {
 	if (' ' <= (unsigned char)c && (unsigned char)c <= '~')

@@ -1,5 +1,6 @@
 #include "libft.h"
 
+// if c is uppercase returns it in lowercase
 int	ft_tolower(int c)
 {
 	if ('A' <= (unsigned char)c && (unsigned char)c <= 'Z')

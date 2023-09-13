@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* applies the function ’f’ to each character of the
+string ’s’ to allocate a new string and returns it */
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	int	i;

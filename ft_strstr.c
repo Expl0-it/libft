@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* looks for a string needle in haystack
+returns pointer starting with needle or NULL*/
 char	*ft_strstr(const char *haystack, const char *needle)
 {
 	size_t	i;

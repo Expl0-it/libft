@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//allocates memory and returns concateneted strings
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int	i;

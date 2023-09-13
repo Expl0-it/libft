@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//allocates nmemb memory areas of size bytes
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*p_memory;

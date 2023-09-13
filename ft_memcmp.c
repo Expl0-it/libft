@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//compares size bytes of memory and returns the difference
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*p_s1;

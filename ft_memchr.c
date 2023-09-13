@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//returns pointer to char c in memory or NULL if not found
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*p_s;

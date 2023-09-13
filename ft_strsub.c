@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* allocates the sunstring starting and start of len length
+returns the newly created string */
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;

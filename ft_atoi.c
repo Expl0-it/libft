@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//changes char[] value to int value
 int	ft_atoi(const char *nptr)
 {
 	int	minus;

@@ -1,8 +1,9 @@
 #include "libft.h"
 
+//frees memory pointed by ap and sets pointer to NULL
 void	ft_memdel(void **ap)
 {
-	if (*ap)
+	if (ap != NULL && *ap != NULL)
 	{
 		free(*ap);
 		*ap = NULL;

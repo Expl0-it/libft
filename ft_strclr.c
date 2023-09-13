@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//sets all the values in string s to 0
 void	ft_strclr(char *s)
 {
 	int	i;

@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* concatanates max size bytes of 2 strings
+returns length of new string */
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	length;

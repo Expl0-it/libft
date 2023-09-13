@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//retunrs pointer to first apperence of c or NULL
 char *ft_strchr(const char *s, int c)
 {
 	while (*s)

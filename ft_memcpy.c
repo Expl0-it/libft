@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//copies size bytes of memory, returns copied memory
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*p_dest;

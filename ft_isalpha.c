@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//checks if the value is alphabetical
 int	ft_isalpha(int c)
 {
 	if (('A' <= (unsigned char)c && (unsigned char)c <= 'Z')

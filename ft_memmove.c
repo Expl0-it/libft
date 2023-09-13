@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/*copies n bytes of memory to a temp array and then puts it in dest
+returns copied memory*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	*p_src;

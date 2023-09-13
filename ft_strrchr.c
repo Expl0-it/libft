@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* looks for a character in string staring with last char
+returns pointer to that char or NULL*/
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;

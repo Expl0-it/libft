@@ -1,5 +1,7 @@
 #include "libft.h"
 
+/* copies size bytes of string terminated by 0
+returns length of new string */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	length;

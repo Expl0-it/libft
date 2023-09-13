@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+//compares 2 strings, returns the difference
 int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 && (unsigned char)*s1 == (unsigned char)*s2)

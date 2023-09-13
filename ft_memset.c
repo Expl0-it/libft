@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//sets n bytes of memory to c value and returns pointer to memory
 void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*p;

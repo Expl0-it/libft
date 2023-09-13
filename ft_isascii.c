@@ -1,5 +1,6 @@
 #include "libft.h"
 
+//check if the value exists in the ascii table
 int	ft_isascii(int c)
 {
 	if ((unsigned char)c <= 127)
