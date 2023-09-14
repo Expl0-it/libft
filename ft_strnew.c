@@ -3,7 +3,7 @@
 //allocates a new string and returns it
 char	*ft_strnew(size_t size)
 {
-	return (ft_memalloc(size + 1));
+	return ((char *)ft_memalloc(size + 1));
 }
 
 /*
