@@ -1,6 +1,15 @@
 #include "libft.h"
 
-//sets n bytes of memory to c value and returns pointer to memory
+/** @brief Fill memory with a constant byte.
+ * 
+ * The memset() function fills the first n bytes of the memory area
+ * pointed to by s with the constant byte c.
+ *
+ * 	@param s pointer to a memory area to fill
+ * 	@param c character to fill the memory area with
+ * 	@param n number of bytes to fill
+ *  @return The memset() function returns a pointer to the memory area s.
+ */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*p;

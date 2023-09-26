@@ -1,6 +1,12 @@
 #include "libft.h"
 
-// allocates size bytes of protected memory and fills it with value 0
+/** @brief Allocates (with malloc(3)) and returns a “fresh” memory
+ * 	area. The memory allocated is initialized to 0. If the allocation fails,
+ *  the function returns NULL
+ * 
+ *  @param size the size of the memory that needs to be allocated
+ *  @return the allocated memory area
+ */
 void	*ft_memalloc(size_t size)
 {
 	void	*memory;

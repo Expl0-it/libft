@@ -5,7 +5,7 @@
  * 	Check whether c, which must have the value of an unsigned char
  *  falls into a certain character class according to the current locale.
  *
- *  @param c int value of character in character encoding
+ *  @param c int value of character in character encoding (unsigned char)
  *  @return 1 if true, 0 if false
  */
 int	ft_isalpha(int c)

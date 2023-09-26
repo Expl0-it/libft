@@ -1,6 +1,15 @@
 #include "libft.h"
 
-//copies size bytes of memory, returns copied memory
+/** @brief Copy memory area. 
+ * 
+ * The memcpy() function copies n bytes from memory area src to memory area dest.
+ * The memory areas must not overlap.
+ *
+ * 	@param dest memory area to copy to
+ * 	@param src memory area to copy from
+ * 	@param n maximal number of bytes to copy
+ *  @return The memcpy() function returns a pointer to dest (memory area copied to)
+ */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char	*p_dest;

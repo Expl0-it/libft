@@ -1,6 +1,11 @@
 #include "libft.h"
 
-//frees memory pointed by ap and sets pointer to NULL
+/** @brief Takes as a parameter the address of a memory area that needs 
+ *	to be freed with free(3), then puts the pointer to NULL
+ *
+ *  @param ap pointer’s address that needs its memory freed and set to NULL.
+ *  @return Void
+ */
 void	ft_memdel(void **ap)
 {
 	if (ap != NULL && *ap != NULL)
