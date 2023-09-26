@@ -1,6 +1,8 @@
 #include "libft.h"
 
-/** @brief Allocates (with malloc(3)) and returns a “fresh” memory
+/** @brief Allocate dynamic memory.
+ * 
+ * 	Allocates (with malloc(3)) and returns a “fresh” memory
  * 	area. The memory allocated is initialized to 0. If the allocation fails,
  *  the function returns NULL
  * 

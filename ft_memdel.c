@@ -1,6 +1,8 @@
 #include "libft.h"
 
-/** @brief Takes as a parameter the address of a memory area that needs 
+/** @brief Free memory area.
+ * 
+ * 	Takes as a parameter the address of a memory area that needs 
  *	to be freed with free(3), then puts the pointer to NULL
  *
  *  @param ap pointer’s address that needs its memory freed and set to NULL.

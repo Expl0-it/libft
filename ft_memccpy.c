@@ -1,6 +1,8 @@
 #include "libft.h"
 
-/** @brief copies no more than n bytes from memory area src to memory area dest,
+/** @brief Copy memory area.
+ * 
+ * 	copies no more than n bytes from memory area src to memory area dest,
  * 	stopping when the character c is found.
  * 	If the memory areas overlap, the results are undefined.
  *
