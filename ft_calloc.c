@@ -1,6 +1,18 @@
 #include "libft.h"
 
-//allocates nmemb memory areas of size bytes
+/** @brief allocate dynamic memory
+ *
+ *  The calloc() function allocates memory for an
+ *  array of nmemb elements of size bytes each and
+ *  returns a 	pointer to the allocated memory.
+ *  The memory is set to zero. If nmemb or size is 0,
+ *  then calloc() returns either NULL, or a unique pointer
+ *  value that can later be successfully passed to free().
+ *
+ *  @param nmemb number of elements to allocate
+ * 	@param size size of each element to allocate
+ *  @return pointer to the allocated memory, NULL on error or if any params = 0
+ */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*p_memory;

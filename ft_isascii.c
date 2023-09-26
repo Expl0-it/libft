@@ -1,7 +1,14 @@
 #include "libft.h"
 
-//check if the value exists in the ascii table
-int	ft_isascii(int c)
+/** @brief checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
+ *
+ * 	check whether c, which must have the value of an unsigned char
+ *  falls into a certain character class according to the current locale.
+ *
+ *  @param c int value of character in character encoding
+ *  @return 1 if true, 0 if false
+ */
+int ft_isascii(int c)
 {
 	if ((unsigned char)c <= 127)
 		return (1);

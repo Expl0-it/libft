@@ -1,10 +1,16 @@
 #include "libft.h"
 
-//checks if the value is alphabetical
-int	ft_isalpha(int c)
+/** @brief checks for an alphabetic character
+ *
+ * 	check whether c, which must have the value of an unsigned char
+ *  falls into a certain character class according to the current locale.
+ *
+ *  @param c int value of character in character encoding
+ *  @return 1 if true, 0 if false
+ */
+int ft_isalpha(int c)
 {
-	if (('A' <= (unsigned char)c && (unsigned char)c <= 'Z')
-	|| ('a' <= (unsigned char)c && (unsigned char)c <= 'z'))
+	if (('A' <= (unsigned char)c && (unsigned char)c <= 'Z') || ('a' <= (unsigned char)c && (unsigned char)c <= 'z'))
 		return (1);
 	return (0);
 }

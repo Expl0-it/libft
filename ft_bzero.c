@@ -1,6 +1,14 @@
 #include "libft.h"
 
-//fills memory area with the value 0
+/** @brief write zero-valued bytes
+ *
+ *  The bzero() function sets the first n bytes of the 
+ * 	area starting at s to zero (bytes containing aq\0aq).
+ *
+ *  @param s pointer to a starting memory
+ * 	@param n number of bytes to write to
+ *  @return Void
+ */
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
