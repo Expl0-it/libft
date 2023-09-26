@@ -1,6 +1,6 @@
 #include "libft.h"
 
-/** @brief allocate dynamic memory
+/** @brief Allocate dynamic memory.
  *
  *  The calloc() function allocates memory for an
  *  array of nmemb elements of size bytes each and

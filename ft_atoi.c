@@ -1,6 +1,6 @@
 #include "libft.h"
 
-/** @brief convert a string to an integer
+/** @brief Convert a string to an integer.
  *
  *  The atoi() function converts the initial portion of the string
  *  pointed to by nptr to int.
@@ -9,7 +9,6 @@
  *  @return Int converted from a string.
  *	@bug overflow not taken care of
  */
-//changes char[] value to int value
 int	ft_atoi(const char *nptr)
 {
 	int	minus;
@@ -27,8 +26,8 @@ int	ft_atoi(const char *nptr)
 	}
 	while (*nptr >= '0' && *nptr <= '9')
 	{
-			num = num * 10;
-			num += *nptr - 48;
+		num = num * 10;
+		num += *nptr - 48;
 		nptr++;
 	}
 	return (num * minus);

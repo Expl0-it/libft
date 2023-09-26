@@ -1,14 +1,14 @@
 #include "libft.h"
 
-/** @brief checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)).
+/** @brief Checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)). \n \n
  *
- * 	check whether c, which must have the value of an unsigned char
+ * 	Check whether c, which must have the value of an unsigned char
  *  falls into a certain character class according to the current locale.
  *
  *  @param c int value of character in character encoding
  *  @return 1 if true, 0 if false
  */
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);

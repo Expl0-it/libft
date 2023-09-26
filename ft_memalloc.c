@@ -1,9 +1,9 @@
 #include "libft.h"
 
-//allocates size bytes of protected memory and fills it with value 0
+// allocates size bytes of protected memory and fills it with value 0
 void	*ft_memalloc(size_t size)
 {
-	void    *memory;
+	void	*memory;
 	memory = malloc(size);
 	if (!memory)
 	{

@@ -1,14 +1,14 @@
 #include "libft.h"
 
-/** @brief checks for any printable character including space.
+/** @brief Checks for any printable character including space.
  *
- * 	check whether c, which must have the value of an unsigned char
+ * 	Check whether c, which must have the value of an unsigned char
  *  falls into a certain character class according to the current locale.
  *
  *  @param c int value of character in character encoding
  *  @return 1 if true, 0 if false
  */
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (' ' <= (unsigned char)c && (unsigned char)c <= '~')
 		return (1);
