@@ -1,6 +1,11 @@
 #include "libft.h"
 
-//frees the string, sets pointer to NULL
+/** @brief Takes as a parameter the address of a string that need to be
+ * 	freed with free(3), then sets its pointer to NULL.
+ *
+ *  @param ap the string’s address that needs to be freed and its pointer set to NULL
+ *  @return Void
+ */
 void ft_strdel(char **as)
 {
 	if (as != NULL && *as != NULL)

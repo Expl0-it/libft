@@ -1,6 +1,10 @@
 #include "libft.h"
 
-//sets all the values in string s to 0
+/** @brief Sets every character of the string to the value ’\0’.
+ * 
+ *  @param s the string that needs to be cleared
+ *  @return pointer to the matched character or NULL if the character is not found
+ */
 void	ft_strclr(char *s)
 {
 	int	i;
