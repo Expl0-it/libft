@@ -10,7 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//returns length of a given string
+/** @brief Calculate the length of a string.
+ * 
+ * 	The strlen() function calculates the length of the string s,
+ *  excluding the terminating null byte ('\0').
+ *
+ *  @param str the string to measure
+ *  @return the number of bytes in the string s
+ */
 int	ft_strlen(char const *str)
 {
 	int	length;

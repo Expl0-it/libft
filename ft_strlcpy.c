@@ -1,7 +1,15 @@
 #include "libft.h"
 
-/* copies size bytes of string terminated by 0
-returns length of new string */
+/** @brief Size-bounded string copying.
+ * 
+ * 	The strlcpy() function copies up to size - 1 characters
+ *  from the NUL-terminated string src to dst, NUL-terminating the result.
+ *
+ *  @param dst the prefix string
+ * 	@param src the suffix string
+ * 	@param size the (maximal numer of bytes - 1) to copy from src to dst
+ *  @return the length of src
+ */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	length;

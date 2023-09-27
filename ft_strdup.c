@@ -1,6 +1,13 @@
 #include "libft.h"
 
-//duplicates the string and returns it
+/** @brief Duplicate a string.
+ * 
+ * 	The strdup() function returns a pointer to a new string which is a duplicate of the string s.
+ *  Memory for the new string is obtained with malloc(3), and can be freed with free(3).
+ *
+ *  @param s string to duplicate
+ *  @return a pointer to the duplicated string, or NULL if insufficient memory was available.
+ */
 char	*ft_strdup(const char *s)
 {
 	char	*new;
