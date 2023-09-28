@@ -12,8 +12,18 @@
 
 #include "libft.h"
 
-/* compares n bytes of two strings
-returns difference */
+/** @brief Compare two strings.
+ * 
+ * 	compares the two strings s1 and s2. It returns an integer
+ *  less than, equal to, or greater than zero if s1 is found,
+ *  respectively, to be less than, to match, or be greater than s2.
+ *  Tt only compares the first (at most) n bytes of s1 and s2.
+ * 
+ * 	@param s1 first string to compare
+ * 	@param s2 second string to compare
+ * 	@param n maximum number of bytes to compare
+ *  @return integer less than, equal to, or greater than zero 
+ */
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {
 	while (*s1 && (unsigned char)*s1 == (unsigned char)*s2 && n)
