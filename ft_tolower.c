@@ -2,7 +2,7 @@
 
 /** @brief Convert letter to lower case.
  * 
- * 	converts the letter c to lower case, if possible.
+ * 	Converts the letter c to lower case, if possible.
  * 	If c is not an unsigned char value, or EOF,
  *  the behavior of these functions is undefined.
  * 
