@@ -1,7 +1,17 @@
 #include "libft.h"
 
-/* looks for a string needle in no more than n bytes of haystack
-returns pointer starting with needle or NULL*/
+/** @brief Locate a substrin.
+ * 
+ * 	Finds the first occurrence
+ *  of the substring needle in the string haystack.
+ *  The terminating null bytes ('\0') are not compared.
+ * 	Scans at most n bytes.
+ * 
+ * 	@param haystack a string to scan
+ * 	@param needle a string to find
+ * 	@param n maximal number of bytes to scan
+ *  @return pointer to the beginning of the substring, or NULL if the substring is not found
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
 	size_t	i;

@@ -1,5 +1,15 @@
 #include "libft.h"
 
+/** @brief Trim start and end of a string.
+ * 
+ * 	Allocates (with malloc(3)) and returns a copy of
+ * 	’s1’ with the characters specified in ’set’ removed
+ * 	from the beginning and the end of the string.
+ * 
+ * 	@param s1 string to be trimmed
+ * 	@param set reference set of characters to trim
+ *  @return The trimmed string or NULL if the allocation fails
+ */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;

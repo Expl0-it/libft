@@ -2,7 +2,7 @@
 
 /** @brief Concatanate strings.
  * 
- * 	creates (with malloc(3)) and returns a “fresh” allocated string ending with ’\0’,
+ * 	Creates (with malloc(3)) and returns a “fresh” allocated string ending with ’\0’,
  *  result of the concatenation of s1 and s2. If the allocation fails
  *  the function returns NULL.
  *

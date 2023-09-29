@@ -2,7 +2,7 @@
 
 /** @brief Locate character in reversed string.
  * 
- * 	The strrchr() function returns a pointer to the last
+ * 	Returns a pointer to the last
  *  occurrence of the character c in the string s.
  * 	The terminating null byte is considered part of the string,
  *  so that if c is specified as '\0', these

@@ -1,6 +1,14 @@
 #include "libft.h"
 
-//if c in lowercase returns it in uppercase
+/** @brief Convert letter to upper case.
+ * 
+ * 	Converts the letter c to upper case, if possible.
+ * 	If c is not an unsigned char value, or EOF,
+ *  the behavior of these functions is undefined.
+ * 
+ * 	@param c letter to convert
+ *  @return converted letter, or c if the conversion was not possible
+ */
 int	ft_toupper(int c)
 {
 	if ('a' <= (unsigned char)c && (unsigned char)c <= 'z')
