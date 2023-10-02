@@ -1,7 +1,16 @@
 #include "libft.h"
 
-/* applies the function ’f’ to each character of the
-string ’s’ to allocate a new string and returns it */
+/** @brief Allocate a modified string.
+ * 
+ * 	Applies the function ’f’ to each character of the
+ * 	string ’s’ to create a new string (with malloc(3))
+ * 	resulting from successive applications of ’f’.
+
+ *
+ *  @param s the reference string
+ * 	@param f the function to apply to each character
+ *  @return the string created from the successive applications of ’f’. Returns NULL if the allocation fails
+ */
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	int	i;
