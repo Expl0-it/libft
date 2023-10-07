@@ -56,7 +56,7 @@ static unsigned int	ft_num_length(int n)
 	return (length);
 }
 
-/**/
+/*
 #include <stdio.h>
 int main(void)
 {
@@ -64,3 +64,4 @@ int main(void)
 	printf("%s", a);
 	return (0);
 }
+*/
