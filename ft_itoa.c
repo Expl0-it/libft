@@ -22,10 +22,10 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		string_num[0] = '-';
-		number = -n;
+		number = (unsigned int)-n;
 	}
 	else
-		number = n;
+		number = (unsigned int)n;
 	if (number == 0)
 		string_num [0] = '0';
 	while (number != 0)
