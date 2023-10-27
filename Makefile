@@ -13,7 +13,7 @@ OBJECTS = $(SOURCES:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@cc -o $(NAME) $(CFLAGS) $(OBJECTS) -I $(INCLUD)
+	@$(CC) -o $(NAME) $(CFLAGS) $(OBJECTS) -I $(INCLUD)
 
 clean:
 	$(RM) $(OBJECTS)
