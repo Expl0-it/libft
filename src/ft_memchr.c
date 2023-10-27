@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Scan memory for a character.
  * 

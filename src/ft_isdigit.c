@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Checks for a digit (0 through 9).
  *

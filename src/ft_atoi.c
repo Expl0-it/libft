@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Convert a string to an integer.
  *

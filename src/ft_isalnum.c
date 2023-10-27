@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)). \n \n
  *

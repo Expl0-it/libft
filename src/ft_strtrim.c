@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Trim start and end of a string.
  * 

@@ -1,4 +1,4 @@
-#include "libft.h"
+#include "../includes/libft.h"
 
 /** @brief Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
  *
