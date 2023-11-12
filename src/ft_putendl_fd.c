@@ -19,9 +19,10 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
-/**/
+/*
 int main(void)
 {
 	ft_putendl_fd("abc", 1);
 	return (0);
 }
+*/
