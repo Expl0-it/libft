@@ -6,8 +6,7 @@
 # include <unistd.h>
 # include <limits.h>
 
-//file operation modes
-# include <fcntl.h> 
+//file operation modes # include <fcntl.h> 
 
 //first
 
