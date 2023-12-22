@@ -1,18 +1,20 @@
 # -*- Makefile -*-
 
-NAME = libft
+NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 INCLUD = includes/libft.h
+SRC_DIR = ./src
+OBJ_DIR = ./obj
 
-SOURCES = src/*.c
-
-OBJECTS = $(SOURCES:.c=.o)
+SOURCES = $(wildcard $(SRC_DIR)/*.c)
+OBJECTS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.obj, $(SOURCES))
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
+	$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c:
 	@$(CC) -o $(NAME) $(CFLAGS) $(OBJECTS) -I $(INCLUD)
 
 clean:
