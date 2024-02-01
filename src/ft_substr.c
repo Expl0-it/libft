@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:46:44 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/01 20:23:39 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@
  * 	@param len maximum size of the substring
  *  @return the allocated substring
  */
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*substr;
-	unsigned int	i;
-	unsigned int	j;
+	char		*substr;
+	size_t		i;
+	size_t		j;
 
 	j = 0;
 	i = start;
