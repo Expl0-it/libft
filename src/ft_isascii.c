@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/01 19:46:02 by mamichal          #+#    #+#             */
+/*   Updated: 2024/02/01 19:46:03 by mamichal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 /** @brief Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.

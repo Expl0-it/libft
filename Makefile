@@ -9,7 +9,7 @@ SRC_DIR = ./src
 OBJ_DIR = ./obj
 
 SOURCES = $(wildcard $(SRC_DIR)/*.c)
-OBJECTS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.obj, $(SOURCES))
+OBJECTS = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SOURCES))
 
 all: $(NAME)
 

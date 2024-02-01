@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/01 19:40:10 by mamichal          #+#    #+#             */
+/*   Updated: 2024/02/01 19:40:13 by mamichal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libft.h"
 
 /** @brief Checks for an alphanumeric character; it is equivalent to (isalpha(c) || isdigit(c)). \n \n
