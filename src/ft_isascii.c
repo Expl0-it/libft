@@ -6,13 +6,13 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:02 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:46:03 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/01 20:27:15 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/** @brief Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
+/** @brief Checks if c is a 7-bit unsigned char from the ASCII character set.
  *
  * 	Check whether c, which must have the value of an unsigned char
  *  falls into a certain character class according to the current locale.
