@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:40:24 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:43:47 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:54:20 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_striter(char *s, void (*f)(char *))
 			f(s);
 			i++;
 		}
-	}	
+	}
 }
 
 /*

@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:42 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:49:44 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:52:41 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
  * 	Takes as a parameter the address of a string that need to be
  * 	freed with free(3), then sets its pointer to NULL.
  *
- *  @param ap the string’s address that needs to be freed and its pointer set to NULL
+ *  @param string’s address that needs to be freed
  *  @return Void
  */
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
 	if (as != NULL && *as != NULL)
 	{

@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:30 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:49:32 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:48:38 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
  * 
  *  @param s string to scan in
  * 	@param c character to scan for (unsigned char)
- *  @return pointer to the matched character or NULL if the character is not found
+ *  @return pointer to the matched character or NULL if not found
  */
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
@@ -34,7 +34,7 @@ char *ft_strchr(const char *s, int c)
 	}
 	if (c == 0)
 		return ((char *)s);
-	return NULL;
+	return (NULL);
 }
 
 /*

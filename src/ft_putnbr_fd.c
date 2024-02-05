@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:38:34 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:38:43 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:47:06 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
  */
 void	ft_putnbr_fd(int n, int fd)
 {
-		if (n == INT_MIN)
+	if (n == INT_MIN)
 	{
 		ft_putstr_fd("-2147483648", fd);
 		return ;

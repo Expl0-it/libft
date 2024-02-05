@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:35 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:46:36 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:43:45 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_memdel(void **ap)
 	{
 		free(*ap);
 		*ap = NULL;
-	}		
+	}
 }
 
 /*

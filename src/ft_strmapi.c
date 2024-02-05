@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:41:22 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:41:29 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:00:30 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@
  *
  *  @param s the reference string
  * 	@param f the function to apply to each character
- *  @return the string created from the successive applications of ’f’. Returns NULL if the allocation fails
+ *  @return string created from applications of ’f’ or NULL if fails
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char	*new;
+	char			*new;
 
 	if (f && s)
 	{
@@ -36,7 +36,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		{
 			new[i] = f(i, s[i]);
 			i++;
-		}	
+		}
 		return (new);
 	}
 	return (NULL);

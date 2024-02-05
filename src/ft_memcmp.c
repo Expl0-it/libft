@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:19 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:49:20 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:39:36 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,17 @@
 
 /** @brief Compare memory areas.
  * 
- * 	The memcmp() function compares the first n bytes (each interpreted as unsigned char)
+ * 	The memcmp() function compares the first n bytes
+ *	(each interpreted as unsigned char)
  *  of the memory areas s1 and s2.
  * 
  *  @param s1 first memory area to compare
  * 	@param s2 second memory area to compare
  * 	@param n maximal number of bytes to compare
- *  @return integer less than, equal to, or greater than zero if the first n bytes of s1 is found
- *  respectively, to be less than, to match, or be greater than the first n bytes of s2
+ *  @return integer less than, equal to, or greater than zero
+ *  if the first n bytes of s1 is found
+ *  respectively, to be less than, to match,
+ *  or be greater than the first n bytes of s2
  */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

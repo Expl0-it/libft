@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:27 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:47:29 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:49:55 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /** @brief Sets every character of the string to the value ’\0’.
  * 
  *  @param s the string that needs to be cleared
- *  @return pointer to the matched character or NULL if the character is not found
+ *  @return pointer to the matched character or NULL not found
  */
 void	ft_strclr(char *s)
 {

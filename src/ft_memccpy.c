@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:44:53 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:44:54 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:36:50 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@
  * 	@param src memory area to copy from
  *  @param c int value of character to be found within memory
  * 	@param n maximal number of bytes to copy
- *  @return a pointer to the next character in dest after c, or NULL if c was not found in the first n
- *  characters of src
+ *  @return a pointer to the next character in dest after c, or NULL if not found
  */
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
@@ -39,7 +38,6 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 			return ((void *)p_dest + 1);
 		p_src++;
 		p_dest++;
-		
 	}
 	return (NULL);
 }

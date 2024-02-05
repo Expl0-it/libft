@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:39:22 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:39:24 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:35:00 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 void	*ft_memalloc(size_t size)
 {
 	void	*memory;
+
 	memory = malloc(size);
 	if (!memory)
 	{

@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:58 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:47:59 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:06:03 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
  */
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*sub;
+	char			*sub;
 	unsigned int	i;
 	unsigned int	j;
 

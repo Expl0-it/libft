@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:50:05 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:50:44 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:34:05 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static unsigned int	ft_num_length(int n);
  */
 char	*ft_itoa(int n)
 {
-	char	*string_num;
+	char			*string_num;
 	unsigned int	length;
 	unsigned int	number;
 
@@ -47,8 +47,6 @@ char	*ft_itoa(int n)
 		length--;
 	}
 	return (string_num);
-	
-	
 }
 
 static unsigned int	ft_num_length(int n)

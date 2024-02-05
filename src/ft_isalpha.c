@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:45:11 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:45:12 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:31:35 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,10 @@
  */
 int	ft_isalpha(int c)
 {
-	if (('A' <= (unsigned char)c && (unsigned char)c <= 'Z') || ('a' <= (unsigned char)c && (unsigned char)c <= 'z'))
+	if (('A' <= (unsigned char)c
+			&& (unsigned char)c <= 'Z')
+		|| ('a' <= (unsigned char)c
+			&& (unsigned char)c <= 'z'))
 		return (1);
 	return (0);
 }

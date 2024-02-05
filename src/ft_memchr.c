@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:48 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:48:49 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:38:06 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
  *  @param s pointer to a memory area to scan in
  * 	@param c value to scan for (unsigned char)
  * 	@param n maximal number of bytes to scan
- *  @return a pointer to the matching byte or NULL if the character does not occur in the given memory area
+ *  @return a pointer to the matching byte or NULL if the character not found 
  */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*p_s;
-	size_t i;
+	size_t			i;
 
 	p_s = (unsigned char *)s;
 	i = 0;

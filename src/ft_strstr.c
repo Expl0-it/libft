@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:10 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:48:12 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:05:14 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * 
  * 	@param haystack a string to scan
  * 	@param needle a string to find
- *  @return pointer to the beginning of the substring, or NULL if the substring is not found
+ *  @return pointer to the beginning of the substring, or NULL if not found
  */
 char	*ft_strstr(const char *haystack, const char *needle)
 {

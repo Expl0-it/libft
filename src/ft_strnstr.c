@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:41:41 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:41:43 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:03:14 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  * 	@param haystack a string to scan
  * 	@param needle a string to find
  * 	@param n maximal number of bytes to scan
- *  @return pointer to the beginning of the substring, or NULL if the substring is not found
+ *  @return pointer to the beginning of the substring, or NULL if not found
  */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
@@ -35,8 +35,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	while (haystack[i] && i < n)
 	{
 		j = 0;
-		while (haystack[i + j] == needle[j] &&
-		 needle[j] != 0 && (i + j) < n)
+		while (haystack[i + j] == needle[j]
+			&& needle[j] != 0 && (i + j) < n)
 			j++;
 		if (needle[j] == 0)
 		{

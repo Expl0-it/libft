@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:36 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:48:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:46:14 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	char	*p;
-	
+
 	p = (char *)s;
 	while (n > 0)
 	{

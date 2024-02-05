@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:47:44 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:53:46 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 /** @brief Duplicate a string.
  * 
- * 	The strdup() function returns a pointer to a new string which is a duplicate of the string s.
- *  Memory for the new string is obtained with malloc(3), and can be freed with free(3).
+ * 	The strdup() function returns a pointer 
+ * 	to a new string which is a duplicate of the string s.
+ *  Memory for the new string is obtained with malloc(3),
+ *  and can be freed with free(3).
  *
  *  @param s string to duplicate
- *  @return a pointer to the duplicated string, or NULL if insufficient memory was available.
+ *  @return a pointer to the duplicated string, or NULL if no memory
  */
 char	*ft_strdup(const char *s)
 {

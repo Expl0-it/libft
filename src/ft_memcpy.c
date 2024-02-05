@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:33 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:47:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:42:13 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
  * 	@param dest memory area to copy to
  * 	@param src memory area to copy from
  * 	@param n maximal number of bytes to copy
- *  @return The memcpy() function returns a pointer to dest (memory area copied to)
+ *  @return The memcpy() function returns a pointer to dest
+ *  memory area copied to)
  */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
