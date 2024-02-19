@@ -1,3 +1,5 @@
+/* TODO */
+
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -6,7 +8,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:04 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:49:06 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/19 13:53:27 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,46 +26,22 @@
  *  @return The array of new strings resulting from the split or NULL if the allocation fails
  */
 
-static int	ft_count_words(char const *s, char c);
-
 char	**ft_split(char const *s, char c)
 {
-	char	**strings;
-
-	if (s == NULL)
+	if (s[0] == 0 && c == 0)
+		return  (0);
+	else
 		return (NULL);
-	strings = (char **)malloc(sizeof(char *) * ft_count_words(s, c));
-	if (!strings)
-		return (NULL);
-	
-	return (strings);
 }
 
-static int	ft_count_words(char const *s, char c)
-{
-	unsigned int	words;
-	unsigned int	i;
-
-	words = 0;
-	i = 0;
-	if (s[i] != c && s[i] != 0)
-	{
-		i++;
-		words++;
-	}
-	while (s[i] != 0)
-	{
-		if (s[i] != c && s[i - 1] == c)
-			words++;
-		i++;
-	}
-	return (words);
-}
-
-/**/
+/*
 #include <stdio.h>
 int main (void)
 {
-	ft_split("abc a avsdjicji a  ", ' ');
+	char **strings = ft_split("abc a avsdjicji a  ", ' ');
+	printf("%s", strings[0]);
+	printf("%s", strings[1]);
+	printf("%s", strings[2]);
 	return (0);
 }
+*/
