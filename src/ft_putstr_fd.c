@@ -6,16 +6,16 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:38:57 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:38:59 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/20 18:04:31 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/** @brief Put a character in file.
+/** @brief Put a string in file.
  * 
  * 	Outputs the string 's' to the given file
- * 	descriptor. \n	 	
+ * 	descriptor.
  * 	STDFD:
  * 	0 => stdin;
  * 	1 => stdout;

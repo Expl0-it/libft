@@ -6,13 +6,13 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:38:22 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:38:23 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/20 18:05:31 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-/** @brief Put a character in file.
+/** @brief Put a string followed by new line in file.
  * 
  * 	Outputs the string ’s’ to the given file
  * 	descriptor, followed by a newline.
