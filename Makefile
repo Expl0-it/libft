@@ -6,7 +6,7 @@
 #    By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 12:51:42 by mamichal          #+#    #+#              #
-#    Updated: 2024/02/19 13:43:28 by mamichal         ###   ########.fr        #
+#    Updated: 2024/02/20 17:35:01 by mamichal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -fr
 
 # Paths and Files
-VPATH = src:src/
+VPATH = src
 SRC = ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
