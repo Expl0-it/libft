@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmichali <mmichali@student.42.de>          +#+  +:+       +#+        */
+/*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 17:32:38 by mmichali          #+#    #+#             */
-/*   Updated: 2023/07/19 17:46:37 by mmichali         ###   ########.fr       */
+/*   Updated: 2024/02/20 18:18:28 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 /** @brief Calculate the length of a string.
  * 

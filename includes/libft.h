@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/20 18:07:04 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/20 18:31:03 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,17 @@ void	*ft_memset(void *s, int c, size_t n);
  *  @return Void
  */
 void	ft_bzero(void *s, size_t n);
+/** @brief Copy memory area. 
+ * 
+ * The memcpy() function copies n bytes from memory area src to memory area dest.
+ * The memory areas must not overlap.
+ *
+ * 	@param dest memory area to copy to
+ * 	@param src memory area to copy from
+ * 	@param n maximal number of bytes to copy
+ *  @return The memcpy() function returns a pointer to dest
+ *  memory area copied to)
+ */
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 /** @brief Copy memory area.
  * 
@@ -57,6 +68,16 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
  *  @return a pointer to the next character in dest after c, or NULL if not found
  */
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+/** @brief Duplicate a string.
+ * 
+ * 	The strdup() function returns a pointer 
+ * 	to a new string which is a duplicate of the string s.
+ *  Memory for the new string is obtained with malloc(3),
+ *  and can be freed with free(3).
+ *
+ *  @param s string to duplicate
+ *  @return a pointer to the duplicated string, or NULL if no memory
+ */
 /** @brief Copy memory area. 
  * 
  * 	The memmove() function copies n bytes from memory area src
@@ -100,14 +121,111 @@ void	*ft_memchr(const void *s, int c, size_t n);
  *  or be greater than the first n bytes of s2
  */
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+/** @brief Calculate the length of a string.
+ * 
+ * 	The strlen() function calculates the length of the string s,
+ *  excluding the terminating null byte ('\0').
+ *
+ *  @param str the string to measure
+ *  @return the number of bytes in the string s
+ */
 int		ft_strlen(char const *str);
+/** @brief Size-bounded string copying.
+ * 
+ * 	The strlcpy() function copies up to size - 1 characters
+ *  from the NUL-terminated string src to dst, NUL-terminating the result.
+ *
+ *  @param dst the prefix string
+ * 	@param src the suffix string
+ * 	@param size the (maximal numer of bytes - 1) to copy from src to dst
+ *  @return the length of src
+ */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+/** @brief Size-bounded string concatenation.
+ * 
+ * 	The strlcat() function appends the NUL-terminated string src
+ *  to the end of dst. It will append at most
+ *  size - strlen(dst) - 1 bytes, NUL-terminating the result.
+ *
+ *  @param dst the prefix string
+ * 	@param src the suffix string
+ * 	@param size the (maximal numer of bytes - 1) to copy from src to dst
+ *  @return the initial length of dst plus the length of src
+ */
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+/** @brief Locate character in string.
+ * 
+ * 	The strchr() function returns a pointer to the 
+ *	first occurrence of the character c in the string s.
+ * 	The terminating null byte is considered part of the string,
+ *  so that if c is specified as '\0', these
+ * 	functions return a pointer to the terminator.
+ * 
+ *  @param s string to scan in
+ * 	@param c character to scan for (unsigned char)
+ *  @return pointer to the matched character or NULL if not found
+ */
 char	*ft_strchr(const char *s, int c);
+/** @brief Locate character in reversed string.
+ * 
+ * 	Returns a pointer to the last
+ *  occurrence of the character c in the string s.
+ * 	The terminating null byte is considered part of the string,
+ *  so that if c is specified as '\0', these
+ * 	functions return a pointer to the terminator.
+ * 
+ *  @param s string to scan in
+ * 	@param c character to scan for (unsigned char)
+ *  @return pointer to the matched character or NULL if not found
+ */
 char	*ft_strrchr(const char *s, int c);
+/** @brief Locate a substring.
+ * 
+ * 	The strnstr() function finds the first occurrence
+ *  of the substring needle in the string haystack.
+ *  The terminating null bytes ('\0') are not compared.
+ * 
+ * 	@param haystack a string to scan
+ * 	@param needle a string to find
+ *  @return pointer to the beginning of the substring, or NULL if not found
+ */
 char	*ft_strstr(const char *haystack, const char *needle);
+/** @brief Locate a substrin.
+ * 
+ * 	Finds the first occurrence
+ *  of the substring needle in the string haystack.
+ *  The terminating null bytes ('\0') are not compared.
+ * 	Scans at most n bytes.
+ * 
+ * 	@param haystack a string to scan
+ * 	@param needle a string to find
+ * 	@param n maximal number of bytes to scan
+ *  @return pointer to the beginning of the substring, or NULL if not found
+ */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
+/** @brief Compare two strings.
+ * 
+ * 	Compares the two strings s1 and s2. It returns an integer
+ *  less than, equal to, or greater than zero if s1 is found,
+ *  respectively, to be less than, to match, or be greater than s2.
+ * 
+ * 	@param s1 first string to compare
+ * 	@param s2 second string to compare
+ *  @return integer less than, equal to, or greater than zero 
+ */
 int		ft_strcmp(char *s1, char *s2);
+/** @brief Compare two strings.
+ * 
+ * 	Compares the two strings s1 and s2. It returns an integer
+ *  less than, equal to, or greater than zero if s1 is found,
+ *  respectively, to be less than, to match, or be greater than s2.
+ *  It only compares the first (at most) n bytes of s1 and s2.
+ * 
+ * 	@param s1 first string to compare
+ * 	@param s2 second string to compare
+ * 	@param n maximum number of bytes to compare
+ *  @return integer less than, equal to, or greater than zero 
+ */
 int		ft_strncmp(char *s1, char *s2, size_t n);
 /** @brief Convert a string to an integer.
  *
@@ -165,7 +283,25 @@ int		ft_isascii(int c);
  *  @return 1 if true, 0 if false
  */
 int		ft_isprint(int c);
+/** @brief Convert letter to upper case.
+ * 
+ * 	Converts the letter c to upper case, if possible.
+ * 	If c is not an unsigned char value, or EOF,
+ *  the behavior of these functions is undefined.
+ * 
+ * 	@param c letter to convert
+ *  @return converted letter, or c if the conversion was not possible
+ */
 int		ft_toupper(int c);
+/** @brief Convert letter to lower case.
+ * 
+ * 	Converts the letter c to lower case, if possible.
+ * 	If c is not an unsigned char value, or EOF,
+ *  the behavior of these functions is undefined.
+ * 
+ * 	@param c letter to convert
+ *  @return converted letter, or c if the conversion was not possible
+ */
 int		ft_tolower(int c);
 /** @brief Allocate dynamic memory.
  *
@@ -181,6 +317,16 @@ int		ft_tolower(int c);
  *  @return pointer to the allocated memory, NULL on error or if any params = 0
  */
 void	*ft_calloc(size_t nmemb, size_t size);
+/** @brief Duplicate a string.
+ * 
+ * 	The strdup() function returns a pointer 
+ * 	to a new string which is a duplicate of the string s.
+ *  Memory for the new string is obtained with malloc(3),
+ *  and can be freed with free(3).
+ *
+ *  @param s string to duplicate
+ *  @return a pointer to the duplicated string, or NULL if no memory
+ */
 char	*ft_strdup(const char *s);
 
 //second
@@ -204,20 +350,109 @@ void	*ft_memalloc(size_t size);
  *  @return Void
  */
 void	ft_memdel(void **ap);
+/** @brief Allocate a string.
+ * 
+ * 	Allocates (with malloc(3)) and returns a “fresh” string
+ *  ending with ’\0’. Each character of the string is initialized at
+ * 	’\0’. If the allocation fails the function returns NULL.
+ * 
+ * 	@param size the size of the string to be allocated
+ *  @return the string allocated and initialized to 0.
+ */
 char	*ft_strnew(size_t size);
+/** @brief Free memory area.
+ * 
+ * 	Takes as a parameter the address of a string that need to be
+ * 	freed with free(3), then sets its pointer to NULL.
+ *
+ *  @param string’s address that needs to be freed
+ *  @return Void
+ */
 void	ft_strdel(char **as);
+/** @brief Sets every character of the string to the value ’\0’.
+ * 
+ *  @param s the string that needs to be cleared
+ *  @return pointer to the matched character or NULL not found
+ */
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+/** @brief Allocate a modified string.
+ * 
+ * 	Applies the function ’f’ to each character of the
+ * 	string ’s’ to create a new string (with malloc(3))
+ * 	resulting from successive applications of ’f’.
+
+ *
+ *  @param s the reference string
+ * 	@param f the function to apply to each character
+ *  @return string created from the applications of ’f’ or NULL at fail
+ */
 char	*ft_strmap(char const *s, char (*f)(char));
+/** @brief Allocate a modified string.
+ * 
+ * 	Applies the function ’f’ to each character of the
+ * 	string ’s’ to create a new string (with malloc(3))
+ * 	resulting from successive applications of ’f’.
+
+ *
+ *  @param s the reference string
+ * 	@param f the function to apply to each character
+ *  @return string created from applications of ’f’ or NULL if fails
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 //strequ->strcmp
 //strnequ->strncmp
 
+/** @brief Allocate a substring.
+ * 
+ * 	Allocates (with malloc(3)) and returns a “fresh” substring
+ * 	from the string given as argument. The substring begins at
+ * 	indexstart and is of size len. If start and len aren’t refering
+ *  to a valid substring, the behavior is undefined. If the
+ * 	allocation fails, the function returns NULL.
+ * 
+ * 	@param s string from which create the substring
+ * 	@param start starting index of the substring
+ * 	@param len maximum size of the substring
+ *  @return the allocated substring
+ */
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
+/** @brief Concatanate strings.
+ * 
+ * 	Creates (with malloc(3)) and returns a “fresh” allocated
+ * 	string ending with ’\0’,
+ *  result of the concatenation of s1 and s2. If the allocation fails
+ *  the function returns NULL.
+ *
+ *  @param s1 the prefix string
+ * 	@param s2 the suffix string
+ *  @return The allocated string result of the concatenation of the 2 strings
+ */
 char	*ft_strjoin(char const *s1, char const *s2);
+/** @brief Trim start and end of a string.
+ * 
+ * 	Allocates (with malloc(3)) and returns a copy of
+ * 	’s1’ with the characters specified in ’set’ removed
+ * 	from the beginning and the end of the string.
+ * 
+ * 	@param s1 string to be trimmed
+ * 	@param set reference set of characters to trim
+ *  @return The trimmed string or NULL if the allocation fails
+ */
 char	*ft_strtrim(char const *s1, char const *set);
+/** @brief Separate stirngs and put into the array
+ * 
+ * 	Allocates (with malloc(3)) and returns an array
+ * 	of strings obtained by splitting ’s’ using the
+ * 	character ’c’ as a delimiter. The array must be
+ * 	ended by a NULL pointer
+ * 
+ * 	@param s The string to be split
+ * 	@param c The delimiter character
+ *  @return The array of new strings resulting from the split or NULL if the allocation fails
+ */
 char	**ft_split(char const *s, char c);
 /** @brief Convert integer to string.
  * 
@@ -287,6 +522,19 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 //second new
 
+/** @brief Allocate a substring.
+ * 
+ * 	Allocates (with malloc(3)) and returns a “fresh” substring
+ * 	from the string given as argument. The substring begins at
+ * 	indexstart and is of size len. If start and len aren’t refering
+ *  to a valid substring, the behavior is undefined. If the
+ * 	allocation fails, the function returns NULL.
+ * 
+ * 	@param s string from which create the substring
+ * 	@param start starting index of the substring
+ * 	@param len maximum size of the substring
+ *  @return the allocated substring
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 //bonus
 
