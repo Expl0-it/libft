@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 13:13:56 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 13:26:37 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ char	*ft_strdup(const char *s)
 }
 
 /*
-*/
 #include <stdio.h>
 int	main(void)
 {
@@ -42,3 +41,4 @@ int	main(void)
 	printf("%s", a);
 	return (0);
 }
+*/

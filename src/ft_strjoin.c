@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 13:12:28 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 13:26:58 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 
 /*
-*/
 #include <stdio.h>
 int main(void)
 {
@@ -59,3 +58,4 @@ int main(void)
 	printf("%s", a);
 	return (0);
 }
+*/
