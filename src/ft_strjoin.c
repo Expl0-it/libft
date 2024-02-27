@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 15:31:14 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 17:28:55 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		s2++;
 		i++;
 	}
-	new[i] = 0; //TODO: check if correct
+	new[i] = 0;
 	return (new);
 }
 
