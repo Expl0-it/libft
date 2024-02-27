@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 11:22:16 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 12:00:43 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	new = malloc(strlen(s1) + strlen(s2) + 1);
 	if (new == NULL)
-		return (NULL); 
+		return (NULL);
 	while (*s1)
 	{
 		new[i] = *s1;
