@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:39:41 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 11:28:24 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 13:15:22 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 			start++;
 		while (s1[end - 1] && ft_strchr(set, s1[end - 1]))
 			end--;
-		trimmed = malloc(end - start + 1);
+		trimmed = (char *)malloc(end - start + 1);
 		if (trimmed == NULL)
 			return (NULL);
 		ft_strlcpy(trimmed, &s1[start], end - start + 1);

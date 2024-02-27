@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:15 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 11:00:40 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 12:48:03 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 #include <stdio.h>
 int	main(void)
 {
-	int	*a = (int *)ft_calloc(25, sizeof(int));
-	printf("%p", a);
+	int	*a = (int *)ft_calloc(2, sizeof(int));
+	printf("start: %p\n", a);
 	return (0);
 }
 */

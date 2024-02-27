@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 11:29:27 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 13:15:46 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	j = 0;
 	i = start;
-	substr = malloc(len + 1);
+	substr = (char *)malloc(len + 1);
 	if (substr == NULL)
 		return (NULL);
 	while (s && j < len)

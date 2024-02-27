@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 12:00:43 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 13:12:28 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new;
 
 	i = 0;
-	new = malloc(strlen(s1) + strlen(s2) + 1);
+	new = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 	if (new == NULL)
 		return (NULL);
 	while (*s1)
@@ -46,10 +46,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		s2++;
 		i++;
 	}
+	new[i] = 0; //TODO: check if correct
 	return (new);
 }
 
 /*
+*/
 #include <stdio.h>
 int main(void)
 {
@@ -57,4 +59,3 @@ int main(void)
 	printf("%s", a);
 	return (0);
 }
-*/
