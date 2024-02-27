@@ -6,11 +6,12 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:41:22 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 16:00:30 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 11:26:05 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
+#include <stdlib.h>
 
 /** @brief Allocate a modified string.
  * 
@@ -31,7 +32,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (f && s)
 	{
 		i = 0;
-		new = ft_strnew(ft_strlen(s));
+		new = malloc(ft_strlen(s) + 1);
+		if (new == NULL)
+			return (NULL);
 		while (s[i])
 		{
 			new[i] = f(i, s[i]);

@@ -6,11 +6,12 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:50:05 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 15:34:05 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 11:04:07 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
+#include <stdlib.h>
 
 static unsigned int	ft_num_length(int n);
 
@@ -30,7 +31,9 @@ char	*ft_itoa(int n)
 	unsigned int	number;
 
 	length = ft_num_length(n);
-	string_num = ft_strnew(length);
+	string_num = malloc(length + 1);
+	if (string_num == NULL)
+		return (NULL);
 	if (n < 0)
 	{
 		string_num[0] = '-';

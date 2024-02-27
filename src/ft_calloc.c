@@ -6,11 +6,12 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:15 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:48:16 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 11:00:40 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
+#include <stdlib.h>
 
 /** @brief Allocate dynamic memory.
  *
@@ -33,7 +34,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	memory_size = nmemb * size;
-	p_memory = ft_memalloc(memory_size);
+	p_memory = malloc(memory_size);
+	if (p_memory == NULL)
+		return (NULL);
+	ft_bzero(p_memory, memory_size);
 	return (p_memory);
 }
 

@@ -6,11 +6,13 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 15:55:57 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 11:22:16 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
+#include <stdlib.h>
+#include <string.h>
 
 /** @brief Concatanate strings.
  * 
@@ -29,7 +31,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new;
 
 	i = 0;
-	new = ft_strnew(strlen(s1) + strlen(s2));
+	new = malloc(strlen(s1) + strlen(s2) + 1);
+	if (new == NULL)
+		return (NULL); 
 	while (*s1)
 	{
 		new[i] = *s1;
