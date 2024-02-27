@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:50:05 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 13:13:15 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 17:16:39 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,9 @@ char	*ft_itoa(int n)
 	string_num = (char *)malloc(length + 1);
 	if (string_num == NULL)
 		return (NULL);
+	ft_bzero(string_num, length + 1);
 	if (n < 0)
-	{
-		string_num[0] = '-';
 		number = (unsigned int)-n;
-	}
 	else
 		number = (unsigned int)n;
 	if (number == 0)
@@ -49,6 +47,8 @@ char	*ft_itoa(int n)
 		number /= 10;
 		length--;
 	}
+	if (n < 0)
+		string_num[0] = '-';
 	return (string_num);
 }
 
