@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/20 18:31:03 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/02/27 10:31:48 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@
  *  @return The memset() function returns a pointer to the memory area s.
  */
 void	*ft_memset(void *s, int c, size_t n);
+
 /** @brief Write zero-valued bytes.
  *
  *  The bzero() function sets the first n bytes of the
@@ -43,6 +44,7 @@ void	*ft_memset(void *s, int c, size_t n);
  *  @return Void
  */
 void	ft_bzero(void *s, size_t n);
+
 /** @brief Copy memory area. 
  * 
  * The memcpy() function copies n bytes from memory area src to memory area dest.
@@ -55,6 +57,7 @@ void	ft_bzero(void *s, size_t n);
  *  memory area copied to)
  */
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+
 /** @brief Copy memory area.
  * 
  * 	Copies no more than n bytes from memory area src to memory area dest,
@@ -67,7 +70,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
  * 	@param n maximal number of bytes to copy
  *  @return a pointer to the next character in dest after c, or NULL if not found
  */
-void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+//void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
+
 /** @brief Duplicate a string.
  * 
  * 	The strdup() function returns a pointer 
@@ -76,8 +80,10 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
  *  and can be freed with free(3).
  *
  *  @param s string to duplicate
- *  @return a pointer to the duplicated string, or NULL if no memory
+ *  @return a pointer to the duplicated string, or NULL
  */
+char	*strdup(const char *s);
+
 /** @brief Copy memory area. 
  * 
  * 	The memmove() function copies n bytes from memory area src
@@ -93,6 +99,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
  *  memory area copied to)
  */
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
 /** @brief Scan memory for a character.
  * 
  * 	The memchr() function scans the initial n bytes of the memory area
@@ -106,6 +113,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
  *  @return a pointer to the matching byte or NULL if the character not found 
  */
 void	*ft_memchr(const void *s, int c, size_t n);
+
 /** @brief Compare memory areas.
  * 
  * 	The memcmp() function compares the first n bytes
@@ -121,6 +129,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
  *  or be greater than the first n bytes of s2
  */
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
 /** @brief Calculate the length of a string.
  * 
  * 	The strlen() function calculates the length of the string s,
@@ -130,6 +139,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
  *  @return the number of bytes in the string s
  */
 int		ft_strlen(char const *str);
+
 /** @brief Size-bounded string copying.
  * 
  * 	The strlcpy() function copies up to size - 1 characters
@@ -141,6 +151,7 @@ int		ft_strlen(char const *str);
  *  @return the length of src
  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
 /** @brief Size-bounded string concatenation.
  * 
  * 	The strlcat() function appends the NUL-terminated string src
@@ -153,6 +164,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
  *  @return the initial length of dst plus the length of src
  */
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+
 /** @brief Locate character in string.
  * 
  * 	The strchr() function returns a pointer to the 
@@ -166,6 +178,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
  *  @return pointer to the matched character or NULL if not found
  */
 char	*ft_strchr(const char *s, int c);
+
 /** @brief Locate character in reversed string.
  * 
  * 	Returns a pointer to the last
@@ -179,6 +192,7 @@ char	*ft_strchr(const char *s, int c);
  *  @return pointer to the matched character or NULL if not found
  */
 char	*ft_strrchr(const char *s, int c);
+
 /** @brief Locate a substring.
  * 
  * 	The strnstr() function finds the first occurrence
@@ -189,7 +203,8 @@ char	*ft_strrchr(const char *s, int c);
  * 	@param needle a string to find
  *  @return pointer to the beginning of the substring, or NULL if not found
  */
-char	*ft_strstr(const char *haystack, const char *needle);
+//char	*ft_strstr(const char *haystack, const char *needle);
+
 /** @brief Locate a substrin.
  * 
  * 	Finds the first occurrence
@@ -203,6 +218,7 @@ char	*ft_strstr(const char *haystack, const char *needle);
  *  @return pointer to the beginning of the substring, or NULL if not found
  */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
+
 /** @brief Compare two strings.
  * 
  * 	Compares the two strings s1 and s2. It returns an integer
@@ -213,7 +229,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
  * 	@param s2 second string to compare
  *  @return integer less than, equal to, or greater than zero 
  */
-int		ft_strcmp(char *s1, char *s2);
+//int		ft_strcmp(char *s1, char *s2);
+
 /** @brief Compare two strings.
  * 
  * 	Compares the two strings s1 and s2. It returns an integer
@@ -227,6 +244,7 @@ int		ft_strcmp(char *s1, char *s2);
  *  @return integer less than, equal to, or greater than zero 
  */
 int		ft_strncmp(char *s1, char *s2, size_t n);
+
 /** @brief Convert a string to an integer.
  *
  *  The atoi() function converts the initial portion of the string
@@ -237,6 +255,7 @@ int		ft_strncmp(char *s1, char *s2, size_t n);
  *	@bug overflow not taken care of
  */
 int		ft_atoi(const char *nptr);
+
 /** @brief Checks for an alphabetic character.
  *
  * 	Check whether c, which must have the value of an unsigned char
@@ -246,6 +265,7 @@ int		ft_atoi(const char *nptr);
  *  @return 1 if true, 0 if false
  */
 int		ft_isalpha(int c);
+
 /** @brief Checks for a digit (0 through 9).
  *
  * 	Check whether c, which must have the value of an unsigned char
@@ -255,6 +275,7 @@ int		ft_isalpha(int c);
  *  @return 1 if true, 0 if false
  */
 int		ft_isdigit(int c);
+
 /** @brief Checks for an alphanumeric character;
  *  it is equivalent to (isalpha(c) || isdigit(c)). \n \n
  *
@@ -265,6 +286,7 @@ int		ft_isdigit(int c);
  *  @return 1 if true, 0 if false
  */
 int		ft_isalnum(int c);
+
 /** @brief Checks if c is a 7-bit unsigned char from the ASCII character set.
  *
  * 	Check whether c, which must have the value of an unsigned char
@@ -274,6 +296,7 @@ int		ft_isalnum(int c);
  *  @return 1 if true, 0 if false
  */
 int		ft_isascii(int c);
+
 /** @brief Checks for any printable character including space.
  *
  * 	Check whether c, which must have the value of an unsigned char
@@ -283,6 +306,7 @@ int		ft_isascii(int c);
  *  @return 1 if true, 0 if false
  */
 int		ft_isprint(int c);
+
 /** @brief Convert letter to upper case.
  * 
  * 	Converts the letter c to upper case, if possible.
@@ -293,6 +317,7 @@ int		ft_isprint(int c);
  *  @return converted letter, or c if the conversion was not possible
  */
 int		ft_toupper(int c);
+
 /** @brief Convert letter to lower case.
  * 
  * 	Converts the letter c to lower case, if possible.
@@ -303,6 +328,7 @@ int		ft_toupper(int c);
  *  @return converted letter, or c if the conversion was not possible
  */
 int		ft_tolower(int c);
+
 /** @brief Allocate dynamic memory.
  *
  *  The calloc() function allocates memory for an
@@ -317,6 +343,7 @@ int		ft_tolower(int c);
  *  @return pointer to the allocated memory, NULL on error or if any params = 0
  */
 void	*ft_calloc(size_t nmemb, size_t size);
+
 /** @brief Duplicate a string.
  * 
  * 	The strdup() function returns a pointer 
@@ -340,7 +367,8 @@ char	*ft_strdup(const char *s);
  *  @param size the size of the memory that needs to be allocated
  *  @return the allocated memory area
  */
-void	*ft_memalloc(size_t size);
+//void	*ft_memalloc(size_t size);
+
 /** @brief Free memory area.
  * 
  * 	Takes as a parameter the address of a memory area that needs 
@@ -349,7 +377,8 @@ void	*ft_memalloc(size_t size);
  *  @param ap pointer’s address that needs its memory freed and set to NULL.
  *  @return Void
  */
-void	ft_memdel(void **ap);
+//void	ft_memdel(void **ap);
+
 /** @brief Allocate a string.
  * 
  * 	Allocates (with malloc(3)) and returns a “fresh” string
@@ -359,7 +388,8 @@ void	ft_memdel(void **ap);
  * 	@param size the size of the string to be allocated
  *  @return the string allocated and initialized to 0.
  */
-char	*ft_strnew(size_t size);
+//char	*ft_strnew(size_t size);
+
 /** @brief Free memory area.
  * 
  * 	Takes as a parameter the address of a string that need to be
@@ -368,15 +398,27 @@ char	*ft_strnew(size_t size);
  *  @param string’s address that needs to be freed
  *  @return Void
  */
-void	ft_strdel(char **as);
+//void	ft_strdel(char **as);
+
 /** @brief Sets every character of the string to the value ’\0’.
  * 
  *  @param s the string that needs to be cleared
  *  @return pointer to the matched character or NULL not found
  */
-void	ft_strclr(char *s);
-void	ft_striter(char *s, void (*f)(char *));
+//void	ft_strclr(char *s);
+
+/** @brief Apply function to evry character
+ *
+ * Applies the function ’f’ on each character of
+ * the string passed as argument, passing its index
+ * as first argument. Each character is passed by
+ * address to ’f’ to be modified if necessary.
+ *
+ * @param s The string on which to iterate.
+ * @param f The function to apply to each character.
+ */
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+
 /** @brief Allocate a modified string.
  * 
  * 	Applies the function ’f’ to each character of the
@@ -388,22 +430,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
  * 	@param f the function to apply to each character
  *  @return string created from the applications of ’f’ or NULL at fail
  */
-char	*ft_strmap(char const *s, char (*f)(char));
+//char	*ft_strmap(char const *s, char (*f)(char));
+
 /** @brief Allocate a modified string.
  * 
  * 	Applies the function ’f’ to each character of the
  * 	string ’s’ to create a new string (with malloc(3))
  * 	resulting from successive applications of ’f’.
-
  *
  *  @param s the reference string
  * 	@param f the function to apply to each character
  *  @return string created from applications of ’f’ or NULL if fails
  */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
-//strequ->strcmp
-//strnequ->strncmp
 
 /** @brief Allocate a substring.
  * 
@@ -418,7 +457,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
  * 	@param len maximum size of the substring
  *  @return the allocated substring
  */
-char	*ft_strsub(char const *s, unsigned int start, size_t len);
+//char	*ft_strsub(char const *s, unsigned int start, size_t len);
+
 /** @brief Concatanate strings.
  * 
  * 	Creates (with malloc(3)) and returns a “fresh” allocated
@@ -431,6 +471,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
  *  @return The allocated string result of the concatenation of the 2 strings
  */
 char	*ft_strjoin(char const *s1, char const *s2);
+
 /** @brief Trim start and end of a string.
  * 
  * 	Allocates (with malloc(3)) and returns a copy of
@@ -442,6 +483,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
  *  @return The trimmed string or NULL if the allocation fails
  */
 char	*ft_strtrim(char const *s1, char const *set);
+
 /** @brief Separate stirngs and put into the array
  * 
  * 	Allocates (with malloc(3)) and returns an array
@@ -451,9 +493,10 @@ char	*ft_strtrim(char const *s1, char const *set);
  * 
  * 	@param s The string to be split
  * 	@param c The delimiter character
- *  @return The array of new strings resulting from the split or NULL if the allocation fails
+ *  @return The array of new strings from the split or NULL
  */
 char	**ft_split(char const *s, char c);
+
 /** @brief Convert integer to string.
  * 
  * 	Allocates (with malloc(3)) and returns a string
@@ -464,6 +507,7 @@ char	**ft_split(char const *s, char c);
  *  @return The string representing the integer or NULL if the allocation fails
  */
 char	*ft_itoa(int n);
+
 /** @brief Put a character in file.
  * 
  * 	Outputs the character ’c’ to the given file
@@ -478,6 +522,7 @@ char	*ft_itoa(int n);
  *  @return Void.
  */
 void	ft_putchar_fd(char c, int fd);
+
 /** @brief Put a string in file.
  * 
  * 	Outputs the string 's' to the given file
@@ -492,6 +537,7 @@ void	ft_putchar_fd(char c, int fd);
  *  @return Void.
  */
 void	ft_putstr_fd(char *s, int fd);
+
 /** @brief Put a string followed by new line in file.
  * 
  * 	Outputs the string ’s’ to the given file
@@ -506,6 +552,7 @@ void	ft_putstr_fd(char *s, int fd);
  *  @return Void.
  */
 void	ft_putendl_fd(char *s, int fd);
+
 /** @brief Put a number in file.
  * 
  * 	Outputs the integer ’n’ to the given file
@@ -520,7 +567,6 @@ void	ft_putendl_fd(char *s, int fd);
  *  @return Void.
  */
 void	ft_putnbr_fd(int n, int fd);
-//second new
 
 /** @brief Allocate a substring.
  * 
@@ -536,6 +582,7 @@ void	ft_putnbr_fd(int n, int fd);
  *  @return the allocated substring
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+
 //bonus
 
 //additional
