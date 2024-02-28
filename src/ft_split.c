@@ -1,5 +1,5 @@
 /* TODO */
-
+#include <stdio.h>
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -26,22 +26,49 @@
  *  @return The array of new strings resulting from the split or NULL if the allocation fails
  */
 
+static int	count_words(char const *s, char c);
+
+//static char	*fill_word(const char *s, int start, int end);
+
+//static void	*error_free(char **strs, int count);
+
 char	**ft_split(char const *s, char c)
 {
-	if (s[0] == 0 && c == 0)
-		return  (0);
-	else
-		return (NULL);
+	printf("%d", count_words(s, c));
+	return (NULL);
 }
 
+static int	count_words(char const *s, char c)
+{
+	int	count;
+	int	trigger;
+	int	i;
+
+	count = 0;
+	trigger = 0;
+	i = 0;
+	while(s[i])
+	{
+		if (s[i] != c && trigger == 0)
+		{
+			trigger = 1;
+			count++;
+		}
+		else if (s[i] == c)
+			trigger = 0;
+		i++;
+	}
+	return (count);
+}
 /*
-#include <stdio.h>
+*/
 int main (void)
 {
-	char **strings = ft_split("abc a avsdjicji a  ", ' ');
-	printf("%s", strings[0]);
+/*	char **strings =*/ ft_split(" ", ' ');
+/*
+ 	printf("%s", strings[0]);
 	printf("%s", strings[1]);
 	printf("%s", strings[2]);
+*/
 	return (0);
 }
-*/
