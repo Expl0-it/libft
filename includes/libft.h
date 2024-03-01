@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 10:31:48 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/01 14:34:29 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -243,7 +243,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
  * 	@param n maximum number of bytes to compare
  *  @return integer less than, equal to, or greater than zero 
  */
-int		ft_strncmp(char *s1, char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /** @brief Convert a string to an integer.
  *

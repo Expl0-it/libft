@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmichali <mmichali@student.42.de>          +#+  +:+       +#+        */
+/*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 13:20:40 by mmichali          #+#    #+#             */
-/*   Updated: 2023/08/02 11:23:34 by mmichali         ###   ########.fr       */
+/*   Updated: 2024/03/01 14:36:40 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,12 @@
  * 	@param n maximum number of bytes to compare
  *  @return integer less than, equal to, or greater than zero 
  */
-int	ft_strncmp(char *s1, char *s2, size_t n)
+
+/*
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
+	if (0 == n)
+		return (0);
 	while (*s1 && (unsigned char)*s1 == (unsigned char)*s2 && n)
 	{
 		s1++;
@@ -34,6 +38,19 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	}
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
+*/
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n && s1[i] && (s1[i] == s2[i]))
+		i++;
+	if (i < n)
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	return (0);
+}
 
 /*
 #include <stdio.h>
@@ -41,10 +58,10 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 
 int main()
 {
-	char s1[20] = "aba";
-	char s2[20] = "aba";
-	int a = ft_strncmp(s1, s2, 3);
-	int b = strncmp(s1, s2, 3);
+	char s1[20] = "123456789";
+	char s2[20] = "123456789";
+	int a = ft_strncmp(s1, s2, 0);
+	int b = strncmp(s1, s2, 0);
 	printf("%d, %d", a, b);
 	return 0;
 }
