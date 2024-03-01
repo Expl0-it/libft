@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:30 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 15:48:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/01 12:49:50 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			return ((char *)s);
 		s++;
 	}
-	if (c == 0)
+	if ((unsigned char)c == 0)
 		return ((char *)s);
 	return (NULL);
 }
@@ -42,7 +42,7 @@ char	*ft_strchr(const char *s, int c)
 
 int main(void)
 {
-	char	*a = strchr("abcdb", 'b');
+	char	*a = strchr("abc", 'a + 256');
 	char	*b = ft_strchr("abcdb", 'b');
 	printf("%s\n%s\n", a, b);
 	return (0);

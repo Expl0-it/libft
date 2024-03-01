@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:04 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/29 16:01:21 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/01 11:54:48 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	**ft_split(char const *s, char c)
 	if (NULL == s)
 		return (NULL);
 	tokens = count_tokens(s, c);
-	words = (char **)malloc((tokens + 1) * sizeof(char));
+	words = (char **)malloc((tokens + 1) * sizeof(char *));
 	if (NULL == words)
 		return (NULL);
 	words[tokens] = NULL;
@@ -121,14 +121,21 @@ static int	safe_malloc(char **words, int position, size_t buffer)
 }
 
 /*
-#include <stdio.h>
 
 int main (void)
 {
-	char **strings = ft_split(" ", ' ');
- 	printf("%s", strings[0]);
-	printf("%s", strings[1]);
-	printf("%s", strings[2]);
+	char **strings = ft_split("0 0 0 0 0", ' ');
+ 	printf("%s\n", strings[0]);
+	printf("%s\n", strings[1]);
+	printf("%s\n", strings[2]);
+	printf("%s\n", strings[3]);
+	printf("%s\n", strings[4]);
+	printf("%s", strings[5]);
+//	printf("%s\n", strings[5]);
+//	printf("%s\n", strings[6]);
+//	printf("%s\n", strings[7]);
+//	printf("%s", strings[8]);
+
 	return (0);
 }
 */

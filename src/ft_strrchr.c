@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:39:57 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 16:04:13 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/01 12:50:49 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strrchr(const char *s, int c)
 	s += i;
 	while (i >= 0)
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			return ((char *)s);
 		s--;
 		i--;
