@@ -6,12 +6,11 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:39:41 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/03 14:42:31 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 20:54:56 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
-#include <stdlib.h>
 
 /** @brief Trim start and end of a string.
  * 
@@ -23,6 +22,21 @@
  * 	@param set reference set of characters to trim
  *  @return The trimmed string or NULL if the allocation fails
  */
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	len;
+
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	len = ft_strlen(s1);
+	while (len && ft_strchr(set, s1[len]))
+		len--;
+	return (ft_substr(s1, 0, len + 1));
+}
+
+/*
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -45,6 +59,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (trimmed);
 }
+*/
 
 /*
 #include <stdio.h>
