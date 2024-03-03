@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:33 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 15:42:13 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 13:53:30 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@
  */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*p_dest;
-	char	*p_src;
+	char		*p_dest;
+	const char	*p_src;
 
 	p_dest = (char *)dest;
-	p_src = (char *)src;
+	p_src = (const char *)src;
 	while (n > 0)
 	{
 		p_dest[n - 1] = p_src[n - 1];
