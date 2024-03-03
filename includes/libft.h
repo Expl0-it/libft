@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/01 14:34:29 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 14:16:46 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -333,7 +333,7 @@ int		ft_tolower(int c);
  *
  *  The calloc() function allocates memory for an
  *  array of nmemb elements of size bytes each and
- *  returns a 	pointer to the allocated memory.
+ *  returns a pointer to the allocated memory.
  *  The memory is set to zero. If nmemb or size is 0,
  *  then calloc() returns either NULL, or a unique pointer
  *  value that can later be successfully passed to free().
