@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:39:41 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/27 13:15:22 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 14:42:31 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*trimmed;
 
 	trimmed = NULL;
-	if (s1 && set)
+	if (s1)
 	{
 		start = 0;
 		end = ft_strlen(s1);
