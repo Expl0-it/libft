@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:40:58 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/28 11:11:02 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 13:52:00 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,14 @@
  *  @return The memmove() function returns a pointer to dest
  *  memory area copied to)
  */
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*p_src;
-	char	*p_dest;
+	const char	*p_src;
+	char		*p_dest;
+	size_t		i;
 
-	p_src = (char *)src;
+	p_src = (const char *)src;
 	p_dest = (char *)dest;
 	if (p_src < p_dest)
 	{
@@ -39,7 +41,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			p_dest[n] = p_src[n];
 	}
 	else
-		ft_memcpy(p_dest, p_src, n);
+	{
+		i = 0;
+		while (i < n)
+		{
+			p_dest[i] = p_src[i];
+			i++;
+		}
+	}
 	return (dest);
 }
 
@@ -47,10 +56,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 #include <stdio.h>
 int main(void)
 {
-	char	*a = "abcdefg";
-	char	b[10];
+	char	*a = "abcde0123456789";
+	char	b[16];
 
-	char	*p_b = ft_memmove(b, a, 4);
+	char	*p_b = ft_memmove(b, a, 10);
 	printf("%s, %s", b, p_b);
 	return 0;
 }
