@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:49:04 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/01 11:54:48 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 22:16:29 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,21 +121,23 @@ static int	safe_malloc(char **words, int position, size_t buffer)
 }
 
 /*
+#include <stdio.h>
 
 int main (void)
 {
-	char **strings = ft_split("0 0 0 0 0", ' ');
- 	printf("%s\n", strings[0]);
-	printf("%s\n", strings[1]);
-	printf("%s\n", strings[2]);
-	printf("%s\n", strings[3]);
-	printf("%s\n", strings[4]);
-	printf("%s", strings[5]);
+	char **strings = ft_split("", 0);
+// 	printf("%s\n", strings[0]);
+//	printf("%s\n", strings[1]);
+//	printf("%s\n", strings[2]);
+//	printf("%s\n", strings[3]);
+//	printf("%s\n", strings[4]);
+//	printf("%s", strings[5]);
 //	printf("%s\n", strings[5]);
 //	printf("%s\n", strings[6]);
 //	printf("%s\n", strings[7]);
 //	printf("%s", strings[8]);
 
+	free(strings);
 	return (0);
 }
 */
