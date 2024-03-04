@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/04 10:10:41 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/03 14:16:46 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -584,25 +584,6 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 //bonus
-
-typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}			t_list;
-
-/*
- * @brief Create last node of the list
- *
- * Allocates (with malloc(3)) and returns a new node.
- * The member variable ’content’ is initialized with
- * the value of the parameter ’content’. The variable
- * ’next’ is initialized to NULL.
- *
- * @param content The content to create a node with
- * @return new node with content and next set to NULL
-*/
-t_list	*ft_lstnew(void *content);
 
 //additional
 
