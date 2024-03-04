@@ -6,7 +6,7 @@
 #    By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 12:51:42 by mamichal          #+#    #+#              #
-#    Updated: 2024/03/01 13:28:38 by mamichal         ###   ########.fr        #
+#    Updated: 2024/03/04 10:48:52 by mamichal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-INCLUDES = ./includes
+INCLUDES = ./includes/libft.h
 RM = rm -fr
 
 # Paths and Files
@@ -80,7 +80,7 @@ obj:
 	mkdir -p obj
 
 obj/%.o: %.c | obj
-	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCLUDES) 
+	$(CC) $(CFLAGS) -c $< -o $@ -include $(INCLUDES) 
 
 clean:
 	$(RM) obj
