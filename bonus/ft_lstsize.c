@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/04 12:15:51 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 11:57:44 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,18 @@ int	ft_lstsize(t_list *lst)
 }
 
 /*
+*/
 #include <stdio.h>
 int main(void)
 {
-	t_list	*node = ft_lstnew("abc");
-	if (NULL == node)
+	t_list	*node1 = ft_lstnew("123");
+	t_list	*node2 = ft_lstnew("abc");
+	if (NULL == node1 || NULL == node2)
 	{
 		return (1);
 	}
-	printf("%s", (char *)node->content);
+	ft_lstadd_front(&node2, node1);
+	int	length = ft_lstsize(node1);
+	printf("%d", length);
 	return EXIT_SUCCESS;
 }
-*/
