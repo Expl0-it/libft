@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/04 12:10:43 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 11:47:29 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -624,6 +624,16 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
  * @return Length of the list
 */
 int		ft_lstsize(t_list *lst);
+
+/*
+ * @brief Show last node of a list
+ *
+ * Returns the last node of the list
+ *
+ * @param lst The beginning of the list
+ * @return Last node of the list
+*/
+t_list	*ft_lstlast(t_list *lst);
 //additional
 
 #endif
