@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 13:29:45 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:48:12 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int main(void)
 	{
 		return (1);
 	}
-	ft_lstadd_front(&node2, node1);
+	ft_lstadd_back(&node1, node2);
 	printf("%p\n", node1->next);
 	printf("%p", node2->next);
 	return EXIT_SUCCESS;
