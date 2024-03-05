@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 17:36:08 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 18:11:49 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (NULL == lst || NULL == del)
 		return ;
-	del(lst->content);
+	(*del)(lst->content);
 	free(lst);
 }
 
