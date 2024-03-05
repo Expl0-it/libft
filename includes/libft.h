@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 11:47:29 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:30:28 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -634,6 +634,17 @@ int		ft_lstsize(t_list *lst);
  * @return Last node of the list
 */
 t_list	*ft_lstlast(t_list *lst);
+
+/*
+ * @brief Add node to the end of the list
+ *
+ * Adds the node ’new’ at the end of the list.
+ *
+ * @param lst The address of a pointer to the first link
+ * @param new The address of a pointer to the node to be added
+ * @return Void
+*/
+void	ft_lstadd_back(t_list **lst, t_list *new);
 //additional
 
 #endif
