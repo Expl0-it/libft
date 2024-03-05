@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/04 10:10:41 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/04 12:10:43 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -604,6 +604,26 @@ typedef struct s_list
 */
 t_list	*ft_lstnew(void *content);
 
+/*
+ * @brief Add node to the beginning of the list
+ *
+ * Adds the node ’new’ at the beginning of the list.
+ *
+ * @param lst The address of a pointer to the first link
+ * @param new The address of a pointer to the node to be added
+ * @return new node with content and next set to NULL
+*/
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
+/*
+ * @brief Count the length of the list 
+ *
+ * Counts the number of nodes in a list.
+ *
+ * @param lst The beginning of the list 
+ * @return Length of the list
+*/
+int		ft_lstsize(t_list *lst);
 //additional
 
 #endif
