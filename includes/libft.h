@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 13:30:28 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:40:51 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -645,6 +645,21 @@ t_list	*ft_lstlast(t_list *lst);
  * @return Void
 */
 void	ft_lstadd_back(t_list **lst, t_list *new);
+
+/*
+ * @brief Delate the node from the list
+ *
+ * Takes as a parameter a node and frees the memory of
+ * the node’s content using the function ’del’ given
+ * as a parameter and free the node. The memory of
+ * ’next’ must not be freed
+ *
+ * @param lst The node to free
+ * @param del address of the function deleting the conten
+ * @return Void
+*/
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+
 //additional
 
 #endif
