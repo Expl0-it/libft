@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 13:40:51 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 09:10:38 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -659,6 +659,20 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
  * @return Void
 */
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
+
+/*
+ * @brief Delate the list starting with given node
+ *
+ * Deletes and frees the given node and every
+ * successor of that node, using the function ’del’
+ * and free(3). Finally, the pointer to the list
+ * must be set to NULL.
+ *
+ * @param lst The address of a pointer to a node
+ * @param del address of the function deleting the content
+ * @return Void
+*/
+void	ft_lstclear(t_list **lst, void (*del)(void*));
 
 //additional
 
