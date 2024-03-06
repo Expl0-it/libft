@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 09:54:21 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:28:38 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -685,6 +685,22 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
  * @return Void
 */
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+/*
+ * @brief Create new, modified list
+ *
+ * Iterates the list ’lst’ and applies the function
+ * ’f’ on the content of each node. Creates a new
+ * list resulting of the successive applications of
+ * the function ’f’. The ’del’ function is used to
+ * delete the content of a node if needed.
+ *
+ * @param lst The address of a pointer to a node
+ * @param f address of the function iterating on the list
+ * @param del address of the function used to delete the content of a node
+ * @return The newly created list
+*/
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 //additional
 
