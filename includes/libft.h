@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 09:10:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 09:54:21 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -673,6 +673,18 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
  * @return Void
 */
 void	ft_lstclear(t_list **lst, void (*del)(void*));
+
+/*
+ * @brief Modify the content of each node
+ *
+ * Iterates the list ’lst’ and applies the function
+ * ’f’ on the content of each node
+ *
+ * @param lst The address of a pointer to a node
+ * @param f The address of function iterating on the list
+ * @return Void
+*/
+void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 //additional
 
