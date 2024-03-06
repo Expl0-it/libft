@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/03 14:16:46 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:28:38 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -584,6 +584,123 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 //bonus
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}			t_list;
+
+/*
+ * @brief Create last node of the list
+ *
+ * Allocates (with malloc(3)) and returns a new node.
+ * The member variable ’content’ is initialized with
+ * the value of the parameter ’content’. The variable
+ * ’next’ is initialized to NULL.
+ *
+ * @param content The content to create a node with
+ * @return new node with content and next set to NULL
+*/
+t_list	*ft_lstnew(void *content);
+
+/*
+ * @brief Add node to the beginning of the list
+ *
+ * Adds the node ’new’ at the beginning of the list.
+ *
+ * @param lst The address of a pointer to the first link
+ * @param new The address of a pointer to the node to be added
+ * @return new node with content and next set to NULL
+*/
+void	ft_lstadd_front(t_list **lst, t_list *new);
+
+/*
+ * @brief Count the length of the list 
+ *
+ * Counts the number of nodes in a list.
+ *
+ * @param lst The beginning of the list 
+ * @return Length of the list
+*/
+int		ft_lstsize(t_list *lst);
+
+/*
+ * @brief Show last node of a list
+ *
+ * Returns the last node of the list
+ *
+ * @param lst The beginning of the list
+ * @return Last node of the list
+*/
+t_list	*ft_lstlast(t_list *lst);
+
+/*
+ * @brief Add node to the end of the list
+ *
+ * Adds the node ’new’ at the end of the list.
+ *
+ * @param lst The address of a pointer to the first link
+ * @param new The address of a pointer to the node to be added
+ * @return Void
+*/
+void	ft_lstadd_back(t_list **lst, t_list *new);
+
+/*
+ * @brief Delate the node from the list
+ *
+ * Takes as a parameter a node and frees the memory of
+ * the node’s content using the function ’del’ given
+ * as a parameter and free the node. The memory of
+ * ’next’ must not be freed
+ *
+ * @param lst The node to free
+ * @param del address of the function deleting the conten
+ * @return Void
+*/
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+
+/*
+ * @brief Delate the list starting with given node
+ *
+ * Deletes and frees the given node and every
+ * successor of that node, using the function ’del’
+ * and free(3). Finally, the pointer to the list
+ * must be set to NULL.
+ *
+ * @param lst The address of a pointer to a node
+ * @param del address of the function deleting the content
+ * @return Void
+*/
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+
+/*
+ * @brief Modify the content of each node
+ *
+ * Iterates the list ’lst’ and applies the function
+ * ’f’ on the content of each node
+ *
+ * @param lst The address of a pointer to a node
+ * @param f The address of function iterating on the list
+ * @return Void
+*/
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+
+/*
+ * @brief Create new, modified list
+ *
+ * Iterates the list ’lst’ and applies the function
+ * ’f’ on the content of each node. Creates a new
+ * list resulting of the successive applications of
+ * the function ’f’. The ’del’ function is used to
+ * delete the content of a node if needed.
+ *
+ * @param lst The address of a pointer to a node
+ * @param f address of the function iterating on the list
+ * @param del address of the function used to delete the content of a node
+ * @return The newly created list
+*/
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 //additional
 
