@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:36:40 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 11:28:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:56:45 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,7 +138,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
  *  @param str the string to measure
  *  @return the number of bytes in the string s
  */
-int		ft_strlen(char const *str);
+size_t	ft_strlen(char const *str);
 
 /** @brief Size-bounded string copying.
  * 

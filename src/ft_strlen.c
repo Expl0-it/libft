@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 17:32:38 by mmichali          #+#    #+#             */
-/*   Updated: 2024/02/20 18:18:28 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:56:27 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@
  *  @param str the string to measure
  *  @return the number of bytes in the string s
  */
-int	ft_strlen(char const *str)
+size_t	ft_strlen(char const *str)
 {
-	int	length;
+	size_t	length;
 
 	length = 0;
 	while (*str)
