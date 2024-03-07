@@ -6,12 +6,11 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/03 14:47:37 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/07 19:57:40 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
-#include <stdlib.h>
 
 /** @brief Allocate a substring.
  * 

@@ -6,13 +6,11 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 12:10:41 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/07 19:53:35 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
-#include <stdlib.h>
-#include <string.h>
 
 /** @brief Concatanate strings.
  * 
