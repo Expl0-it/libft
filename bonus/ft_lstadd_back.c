@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/05 14:02:59 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/07 12:00:41 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,16 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (NULL == new)
-		return ;
-	if (NULL == lst)
+	if (NULL != lst && NULL != new)
 	{
-		*lst = new;
-		return ;
+		if (NULL != *lst)
+		{
+			last = ft_lstlast(*lst);
+			last->next = new;
+		}
+		else
+			*lst = new;
 	}
-	last = ft_lstlast(*lst);
-	last->next = new;
 }
 
 /*
