@@ -6,11 +6,12 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 11:48:19 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/07 19:26:29 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
+#include <stdlib.h>
 
 /*
  * @brief Create new, modified list
@@ -28,31 +29,28 @@
 */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new;
-	t_list	*first;
+	t_list	*new_lst;
+	t_list	*node;
+	void	*mapped_content;
 
 	if (NULL == lst || NULL == f || NULL == del)
-		return NULL;
-	new = ft_lstnew(f(lst->content));
-	if (NULL == new)
-		return NULL;
-	first = new;
-	lst = lst->next;
+		return (NULL);
+	new_lst = NULL;
 	while (NULL != lst)
 	{
-		new->next = ft_lstnew(f(lst->content));
-		if (NULL == new->next)
+		mapped_content = f(lst->content);
+		node = ft_lstnew(mapped_content);
+		if (NULL == node)
 		{
-			ft_lstclear(&first, del);
+			del(mapped_content);
+			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}
-		new = new->next;
+		ft_lstadd_back(&new_lst, node);
 		lst = lst->next;
 	}
-	new->next = NULL;
-	return (first);
+	return (new_lst);
 }
-
 /*
 
 // Won't work, node.content is read-only memory
