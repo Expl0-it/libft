@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:53:31 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/06 11:03:08 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/07 12:04:07 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		return ;
 	while (NULL != lst)
 	{
-		f(lst->next);
+		(*f)(lst->content);
 		lst = lst->next;
 	}
 }
