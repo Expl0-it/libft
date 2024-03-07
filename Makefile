@@ -6,7 +6,7 @@
 #    By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/19 12:51:42 by mamichal          #+#    #+#              #
-#    Updated: 2024/03/05 10:55:20 by mamichal         ###   ########.fr        #
+#    Updated: 2024/03/07 11:29:47 by mamichal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INCLUDES = ./includes/libft.h
 RM = rm -fr
 
 # Paths and Files
-VPATH = src
+VPATH = src:bonus
 SRC = ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
@@ -70,6 +70,18 @@ SRC = ft_atoi.c \
 
 OBJ = $(addprefix obj/,$(SRC:.c=.o))
 
+BONUS = ft_lstadd_back.c \
+		ft_lstadd_front.c \
+		ft_lstclear.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstsize.c
+
+BONUS_OBJ = $(addprefix obj/,$(BONUS:.c=.o))
+
 # Rules
 all: $(NAME)
 
@@ -83,12 +95,22 @@ obj/%.o: %.c | obj
 	$(CC) $(CFLAGS) -c $< -o $@ -include $(INCLUDES) 
 
 clean:
-	$(RM) obj
+	$(RM) obj 
+#	$(RM) bonus_obj
 
 fclean: clean
 	$(RM) $(NAME)
 
 re:	fclean all
+
+#bonus_obj:
+#	mkdir -p bonus_obj
+
+bonus/%.o: %.c | obj
+	$(CC) $(CFLAGS) -c $< -o $@ -include $(INCLUDES) 
+
+bonus: $(OBJ) $(BONUS_OBJ)
+	ar r $(NAME) $(OBJ) $(BONUS_OBJ)
 
 .SILENT:
 
