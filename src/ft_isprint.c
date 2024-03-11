@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:46:08 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:46:10 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:27:57 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  */
 int	ft_isprint(int c)
 {
-	if (' ' <= (unsigned char)c && (unsigned char)c <= '~')
+	if (' ' <= c && c <= '~')
 		return (1);
 	return (0);
 }

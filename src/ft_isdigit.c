@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:45:46 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/01 19:45:47 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:27:27 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  */
 int	ft_isdigit(int c)
 {
-	if ('0' <= (unsigned char)c && (unsigned char)c <= '9')
+	if ('0' <= c && c <= '9')
 		return (1);
 	return (0);
 }
