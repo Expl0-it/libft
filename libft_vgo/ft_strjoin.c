@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:07 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/07 19:59:25 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:23:01 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*new;
 
 	i = 0;
-	new = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	new = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1 * sizeof(char)));
 	if (new == NULL)
 		return (NULL);
 	while (*s1)

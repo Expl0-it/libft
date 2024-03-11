@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:47:43 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/07 19:52:58 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:21:35 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strdup(const char *s)
 	size_t	len;
 
 	len = ft_strlen(s) + 1;
-	new = (char *)malloc(len);
+	new = (char *)malloc(len * sizeof(char));
 	if (new == NULL)
 		return (NULL);
 	ft_memcpy(new, s, len);

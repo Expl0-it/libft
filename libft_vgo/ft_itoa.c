@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:50:05 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/07 19:49:50 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:40:30 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_itoa(int n)
 	unsigned int	number;
 
 	length = ft_num_length(n);
-	string_num = (char *)malloc(length + 1);
+	string_num = (char *)malloc((length + 1) * sizeof(char));
 	if (string_num == NULL)
 		return (NULL);
 	ft_bzero(string_num, length + 1);

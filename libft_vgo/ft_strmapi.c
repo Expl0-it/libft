@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:41:22 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/07 19:59:38 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:21:13 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (f && s)
 	{
 		i = 0;
-		new = (char *)malloc(ft_strlen(s) + 1);
+		new = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 		if (new == NULL)
 			return (NULL);
 		while (s[i])

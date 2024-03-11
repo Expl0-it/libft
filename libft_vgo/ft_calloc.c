@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:48:15 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/07 19:58:57 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:41:21 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	memory_size;
 
 	memory_size = nmemb * size;
-	p_memory = malloc(memory_size);
+	p_memory = (void *)malloc(memory_size);
 	if (p_memory == NULL)
 		return (NULL);
 	ft_bzero(p_memory, memory_size);
