@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:41:41 by mamichal          #+#    #+#             */
-/*   Updated: 2024/02/05 16:03:14 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:55:50 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 	size_t	j;
 
 	i = 0;
-	if (needle == NULL || needle[0] == '\0')
+	if (needle[0] == '\0')
 		return ((char *)haystack);
 	while (haystack[i] && i < n)
 	{

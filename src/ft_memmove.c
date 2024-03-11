@@ -6,7 +6,7 @@
 /*   By: mamichal <mamichal@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:40:58 by mamichal          #+#    #+#             */
-/*   Updated: 2024/03/03 13:52:00 by mamichal         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:55:30 by mamichal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	char		*p_dest;
 	size_t		i;
 
+	if (NULL == src && NULL == dest)
+		return (NULL);
 	p_src = (const char *)src;
 	p_dest = (char *)dest;
 	if (p_src < p_dest)
